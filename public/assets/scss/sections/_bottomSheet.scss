@@ -1,0 +1,152 @@
+.c-bottomSheet{
+    display: none;
+    background-color: rgba($black, 0.5);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10015;
+    top: 0;
+    left: 0;
+
+    &.-active{
+        display: block; 
+    }
+    &__sheet{
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px 8px 0 0;
+        background-color: $white;
+        position: absolute;
+        width: 100vw;
+        height: max-content;
+        max-height: 80vh;
+        bottom: 0;
+        animation: scrollTopStayBottom 1s ease-in-out;
+        overflow: auto;
+    }
+    &__bar{
+        height: 5px;
+        width: 50px;
+        border-radius: 8px;
+        background-color: $gray;
+        margin: 16px auto;
+    }
+    &__heading{
+        b{
+            font-family: helvetica-neue-medium;
+            font-size: 16px;
+            margin: 0 16px;
+            color: $blue;
+        }
+    }
+    &__content{
+        display: inherit;
+        flex-direction: column;
+        padding-bottom: 15%;
+        overscroll-behavior: contain;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+        row-gap: 24px;
+        font-family: helvetica-neue-roman;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    &__count{
+        text-align: center;
+        b{
+            font-family: helvetica-neue-bold !important;
+            font-size: 48px;
+            color: $blue;
+        }
+    }
+
+    &__product{
+        font-family: helvetica-neue-roman;
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+        color: $gray-800;
+        b{
+            font-family: helvetica-neue-medium !important;
+            font-size: 14px;
+            color: $blue;
+        }
+    }
+
+    &__centerline{
+        border-top: 0.5px solid $gray;
+        margin-top: 20px;
+        position: static;
+    }
+
+    &__perbarui{
+        font-family: helvetica-neue-medium;
+        font-size: 14px;
+        color: $black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 10%;
+    }
+
+    &__radio{
+        padding-left: 14%;
+    }
+
+    &__textradio{
+        font-family: helvetica-neue-medium;
+        font-size: 14px;
+        color: $blue;
+        padding-left: 0px;
+    }
+
+    &__textjumlah{
+        font-family: helvetica-neue-medium;
+        font-size: 14px;
+        color: $black;
+        margin-top: 30px;
+        padding-left: 10%;
+    }
+
+    &__inputstock{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    &__buttonsection{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    &__btnsubmit{
+        padding: 14px 30px;
+        font-size: 12px;
+        width: 50%;
+        font-family: helvetica-neue-bold;
+        flex: 0 0 47%;
+        max-width: 50%;
+        margin-left: 3%;
+        background-color: $blue;
+        color: $white !important;
+    }
+
+    &__btncancel{
+        padding: 14px 30px;
+        font-size: 12px;
+        width: 50%;
+        font-family: helvetica-neue-bold;
+        color: $blue;
+        background-color: $white;
+        border-color: $blue;
+        flex: 0 0 47%;
+        max-width: 50%;
+        margin-right: 3%;
+    }   
+
+}

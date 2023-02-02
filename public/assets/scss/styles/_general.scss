@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: satoshi;
+  background-color: $light-gray;
+  color: $black;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  font-family: satoshi-bold;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+input,
+textarea,
+select {
+  border-style: none;
+  background-color: $white;
+  border-radius: 8px;
+  font-family: satoshi;
+  font-size: 0.875rem;
+  padding: 3% 5%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input:disabled,
+select:disabled {
+  background-color: $gray;
+  color: $black;
+}
+
+button {
+  font-family: satoshi-bold;
+  font-size: 0.875rem;
+  padding: 4% 0;
+  border-style: none;
+  border-radius: 8px;
+  background-color: $blue;
+  color: $white;
+  cursor: pointer;
+}

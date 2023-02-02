@@ -1,0 +1,14 @@
+@import "styles/colors";
+@import "styles/font";
+@import "styles/general";
+@import "styles/icons";
+@import "styles/animation";
+@import "styles/framework";
+
+//Main page
+@import "sections/stock";
+@import "sections/bottomSheet";
+@import "sections/alert";
+@import "sections/login";
+
+@import "app";

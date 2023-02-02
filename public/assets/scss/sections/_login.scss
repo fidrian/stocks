@@ -1,0 +1,16 @@
+.c-login {
+    background-color: #f4f7f9;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #5A5A5A;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &__form{
+        font-size: 14px;
+    }
+
+    &__btn{
+        font-size: 14px;
+    }
+}

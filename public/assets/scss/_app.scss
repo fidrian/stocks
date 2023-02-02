@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    background-color: $white;
+}
+
+.content-body{
+    max-width: 500px;
+}
+
+.l-section{
+    margin-top: 32px;
+    &.-padded{
+        padding: 64px 0;
+    }
+    &.-no-margin{
+        margin: 0;
+    }
+    &:last-of-type{
+        margin-bottom: 84px;
+    }
+}
+
+.l-section-3{
+    margin-top: 100px;
+}
+  
